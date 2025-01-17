@@ -35,7 +35,6 @@
     </br>
   <!-- https://github.com/anuraghazra/github-readme-stats -->
   <img align="center" height="162" style="display: inline-block; margin-right: 10px;" src="https://github-readme-stats.vercel.app/api?username=flesymeb&theme=tokyonight&show_icons=true&hide_border=true" />
-    </br>
   <img align="center" height="162" style="display: inline-block;" src="https://github-readme-stats.vercel.app/api/wakatime?username=hyoung&theme=tokyonight&hide_border=true&layout=compact&langs_count=6">
     </br>
 </p>
