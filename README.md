@@ -7,8 +7,8 @@
 <!-- https://github.com/flesymeb/readme-typing-svg -->
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=200&color=FFFFFFFF&vCenter=true&multiline=true&random=false&width=600&height=150&lines=Hi!+Welcome+to+my+GitHub+page.;I+am+a+sophomore+student++at+Tongji+University%2C;majoring+in+Computer+Science.&repeat=true" >
-  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=200&color=000000FF&vCenter=true&multiline=true&random=false&width=600&height=150&lines=Hi!+Welcome+to+my+GitHub+page.;I+am+a+sophomore+student++at+Tongji+University%2C;majoring+in+Computer+Science.&repeat=true" >
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=200&color=FFFFFFFF&vCenter=true&multiline=true&random=false&width=600&height=150&lines=Hi!+Welcome+to+my+GitHub+page.;I+am+a+junior+student++at+Tongji+University%2C;majoring+in+Computer+Science.&repeat=true" >
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=200&color=000000FF&vCenter=true&multiline=true&random=false&width=600&height=150&lines=Hi!+Welcome+to+my+GitHub+page.;I+am+a+junior+student++at+Tongji+University%2C;majoring+in+Computer+Science.&repeat=true" >
   <img alt="Introduction" src="" >
 </picture>
 </p>
@@ -30,19 +30,12 @@
 ## <div align="center">About Me</div>
 
 <p align="center">
+<!-- https://github.com/Ashutosh00710/github-readme-activity-graph -->
+<img width="880" src="https://github-readme-activity-graph.vercel.app/graph?username=flesymeb&theme=rogue&hide_border=true&area=true" />
 <br/>
 <!-- https://github.com/anuraghazra/github-readme-stats -->
 <img align="center" height="162" src="https://github-readme-stats.vercel.app/api?username=flesymeb&theme=tokyonight&show_icons=true&hide_border=true" />
-<!-- https://github.com/DenverCoder1/github-readme-streak-stats -->
-<img align="center" height="162" src="https://streak-stats.demolab.com?user=flesymeb&theme=tokyonight&date_format=%5BY.%5Dn.j&hide_border=true" />
-<br/>
-<!-- https://github.com/Ashutosh00710/github-readme-activity-graph -->
-<img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=flesymeb&theme=rogue&hide_border=true&area=true" />
-<br/>
-<!-- https://github.com/anuraghazra/github-readme-stats -->
-<img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=hyoung&theme=tokyonight&hide_border=true&layout=compact&langs_count=6">
-<!-- https://github.com/anuraghazra/github-readme-stats -->
-<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=flesymeb&theme=tokyonight&hide_border=true&layout=compact&langs_count=6">
+<img align="center" height="162" src="https://github-readme-stats.vercel.app/api/wakatime?username=hyoung&theme=tokyonight&hide_border=true&layout=compact&langs_count=6">
 <br/>
 </p>
 
@@ -55,7 +48,7 @@
 
 <p align="center">
 <br/>
-<img align="center" src="https://skillicons.dev/icons?i=py,c,cpp,md,latex,matlab,windows,docker,vscode,visualstudio,pycharm&theme=light" />
+<img align="center" src="https://skillicons.dev/icons?i=py,cpp,md,latex,windows,ubuntu,docker,vscode,visualstudio,pycharm&theme=light" />
 <br/>
 </p>
 
