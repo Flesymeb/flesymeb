@@ -30,12 +30,16 @@
 ## <div align="center">About Me</div>
 
 <p align="center">
-<!-- https://github.com/Ashutosh00710/github-readme-activity-graph -->
-<img width="868" src="https://github-readme-activity-graph.vercel.app/graph?username=flesymeb&theme=rogue&hide_border=true&area=true" />
-<!-- https://github.com/anuraghazra/github-readme-stats -->
-<img align="center" height="160" src="https://github-readme-stats.vercel.app/api?username=flesymeb&theme=tokyonight&show_icons=true&hide_border=true" />
-<img align="center" height="160" src="https://github-readme-stats.vercel.app/api/wakatime?username=hyoung&theme=tokyonight&hide_border=true&layout=compact&langs_count=6">
+  <!-- https://github.com/Ashutosh00710/github-readme-activity-graph -->
+  <img align="center" width="868" style="display: inline-block; margin-right: 10px;" src="https://github-readme-activity-graph.vercel.app/graph?username=flesymeb&theme=rogue&hide_border=true&area=true" />
+  
+  <!-- https://github.com/anuraghazra/github-readme-stats -->
+  <img align="center" height="160" style="display: inline-block; margin-right: 10px;" src="https://github-readme-stats.vercel.app/api?username=flesymeb&theme=tokyonight&show_icons=true&hide_border=true" />
+  
+  <img align="center" height="160" style="display: inline-block;" src="https://github-readme-stats.vercel.app/api/wakatime?username=hyoung&theme=tokyonight&hide_border=true&layout=compact&langs_count=6">
 </p>
+
+
 
 <!--注释掉START_SECTION:waka-->
 
