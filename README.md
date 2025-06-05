@@ -16,7 +16,7 @@
 <p align="center">
   <img
     alt="Typing SVG"
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=200&color=FFFFFF&vCenter=true&multiline=true&random=false&width=600&height=150&lines=%F0%9F%91%8B+Hi!+Welcome+to+my+GitHub+page.;%F0%9F%8E%93+I+am+a+junior+student+at+Tongji+University;%F0%9F%92%BB+Majoring+in+Computer+Science.&repeat=true" />
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=200&color=EDEDED&background=1E1E1EC1&vCenter=true&multiline=true&random=false&width=600&height=150&lines=%F0%9F%91%8B+Hi!+Welcome+to+my+GitHub+page.;%F0%9F%8E%93+I+am+a+junior+student+at+Tongji+University;%F0%9F%92%BB+Majoring+in+Computer+Science.&repeat=true" />
 </p>
 
 
