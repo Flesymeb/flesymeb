@@ -56,7 +56,7 @@
 
 <p align="center">
 <br/>
-<img align="center" src="https://skillicons.dev/icons?i=py,cpp,md,latex,windows,ubuntu,docker,vscode,visualstudio,pycharm&theme=light" />
+<img align="center" src="https://skillicons.dev/icons?i=py,cpp,windows,ubuntu,docker,md,latex,obsidian,vscode,visualstudio,pycharm&theme=light" />
 <br/>
 </p>
 
