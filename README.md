@@ -7,8 +7,8 @@
 <!-- https://github.com/flesymeb/readme-typing-svg -->
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1500&pause=300&color=FFFFFFF9&vCenter=true&multiline=true&random=false&width=720&height=180&lines=Hi!+Welcome+to+my+GitHub+page.;I+am+a+senior+undergraduate+at+Tongji+University%2C;majoring+in+Computer+Science.;I+am+also+an+incoming+researcher+at+Shanghai+AI+Lab+%26+SJTU.&repeat=true" >
-  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1500&pause=300&color=000000FF&vCenter=true&multiline=true&random=false&width=720&height=180&lines=Hi!+Welcome+to+my+GitHub+page.;I+am+a+senior+undergraduate+at+Tongji+University%2C;majoring+in+Computer+Science.;I+am+also+an+incoming+researcher+at+Shanghai+AI+Lab+%26+SJTU.&repeat=true" >
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1500&pause=300&color=FFFFFFF9&vCenter=true&multiline=true&random=false&width=720&height=180&lines=Hi!+Welcome+to+my+GitHub+page.;I+am+a+senior+undergraduate+at+Tongji+University%2C;majoring+in+Computer+Science.;I+am+also+an+incoming+student+at+Shanghai+AI+Lab+%26+SJTU.&repeat=true" >
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1500&pause=300&color=000000FF&vCenter=true&multiline=true&random=false&width=720&height=180&lines=Hi!+Welcome+to+my+GitHub+page.;I+am+a+senior+undergraduate+at+Tongji+University%2C;majoring+in+Computer+Science.;I+am+also+an+incoming+student+at+Shanghai+AI+Lab+%26+SJTU.&repeat=true" >
   <img alt="Introduction" src="" >
 </picture>
 </p>
