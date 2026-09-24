@@ -53,24 +53,34 @@
 
 <!--注释掉END_SECTION:waka-->
 
-<!-- https://github.com/tandpfun/skill-icons -->
+<!-- 图标直接引用开源库，无本地合成：
+     skillicons.dev (tandpfun/skill-icons) + lobehub/lobe-icons + cdn.simpleicons.org -->
 ## <div align="center">My Tech Stack</div>
 
 <p align="center">
 <br/>
-<!-- 图标带由 scripts/skill_icons.py 合成：skill-icons 官方库 + lobehub/lobe-icons（AI 品牌图标），无底色，深浅主题自适应 -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/flesymeb/flesymeb/main/profile/skill-icons-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flesymeb/flesymeb/main/profile/skill-icons.svg">
-  <img align="center" src="https://raw.githubusercontent.com/flesymeb/flesymeb/main/profile/skill-icons.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,cpp,typescript,rust,vscode,windows,ubuntu,markdown,latex&theme=dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,cpp,typescript,rust,vscode,windows,ubuntu,markdown,latex&theme=light">
+  <img alt="tech stack" height="40" src="https://skillicons.dev/icons?i=python,cpp,typescript,rust,vscode,windows,ubuntu,markdown,latex&theme=light">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/dark/openai.png">
+  <img alt="OpenAI" height="40" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/light/openai.png">
+</picture>
+<img alt="Claude" height="40" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.95.0/icons/claude-color.svg">
+<img alt="Codex" height="40" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.95.0/icons/codex-color.svg">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/inkscape/D4D4D4">
+  <img alt="Inkscape" height="40" src="https://cdn.simpleicons.org/inkscape/4B5B6B">
 </picture>
 <br/>
 </p>
 
-<!-- https://github.com/badges/shields -->
+<!-- https://github.com/alexandresanlim/Badges4-README.md-Profile -->
 <p align="center">
-<a href="https://github.com/flesymeb"><img src="https://raw.githubusercontent.com/flesymeb/flesymeb/main/profile/github-badge.svg" alt="GitHub" height="28"></a>
-<a href="mailto:hyoungyan@outlook.com"><img src="https://raw.githubusercontent.com/flesymeb/flesymeb/main/profile/email-badge.svg" alt="E-mail" height="28"></a>
+<a href="https://github.com/flesymeb"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+<a href="mailto:hyoungyan@outlook.com"><img src="https://img.shields.io/badge/Outlook-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="E-mail"></a>
 </p>
 
 <!-- https://github.com/kyechan99/capsule-render -->
