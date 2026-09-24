@@ -28,11 +28,15 @@ SOURCES = {
 }
 
 # (显示名, 来源, 文件名, 浅色主题单色填充, 深色主题单色填充；None=保留原色)
+# 第 6 项可选：源 markup 修正函数（上游改版兜底，在合并前做字符串替换）
 ICONS = [
     ("Python",     "skillicons", "Python-Light", None, None),
     ("C++",        "skillicons", "CPP", None, None),
     ("TypeScript", "skillicons", "TypeScript", None, None),
-    ("Rust",       "skillicons", "Rust", None, "#D4D4D4"),  # 黑齿轮在深色背景不可见
+    # 上游 2025 改版：Rust.svg 从"黑齿轮无底"变成"红底白齿轮"。
+    # 换回与其他图标一致的米白底 + 黑齿轮（复合图标禁止整体重染，故逐段替换颜色）
+    ("Rust",       "skillicons", "Rust", None, None,
+     lambda s: s.replace('fill="#E43717"', 'fill="#F4F2ED"').replace('fill="#fff"', 'fill="#000"')),
     ("Claude",     "lobeicons", "claude-color", None, None),
     ("Codex",      "lobeicons", "codex-color", None, None),
     ("VS Code",    "skillicons", "VSCode-Light", None, None),
@@ -40,13 +44,18 @@ ICONS = [
     ("Ubuntu",     "skillicons", "Ubuntu-Light", None, None),
     ("Markdown",   "skillicons", "Markdown-Light", None, None),
     ("LaTeX",      "skillicons", "LaTeX-Light", None, None),
-    ("Inkscape",   "simpleicons", "inkscape", "#4B5B6B", "#4B5B6B"),
+    ("Inkscape",   "simpleicons", "inkscape", "#4B5B6B", "#D4D4D4"),  # 深色主题提亮
 ]
 
-def fetch(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "skill-icons-composer"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read().decode("utf-8")
+def fetch(url, retries=3):
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "skill-icons-composer"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode("utf-8")
+        except (TimeoutError, urllib.error.URLError):
+            if attempt == retries - 1:
+                raise
 
 def parse(svg):
     m = re.search(r'viewBox="([-\d\.\s]+)"', svg)
@@ -56,9 +65,18 @@ def parse(svg):
         w = float(re.search(r'width="(\d+)', svg).group(1))
         h = float(re.search(r'height="(\d+)', svg).group(1))
         x = y = 0
+    root = re.search(r'<svg[^>]*>', svg.strip()).group(0)
     inner = re.sub(r'^.*?<svg[^>]*>', '', svg.strip(), count=1, flags=re.S)
     inner = re.sub(r'</svg>\s*$', '', inner).strip()
     inner = re.sub(r'<!--.*?-->', '', inner, flags=re.S)
+    # 根标签被剥掉后，其 fill/stroke 默认值会丢（如 skill-icons 根上的 fill="none"），
+    # 导致无显式 fill 的路径退回 SVG 默认的黑色实心（Markdown 徽章、Ubuntu 圆环踩过坑）。
+    # 用 <g> 继承还原：显式写在子元素上的属性仍优先生效。
+    defaults = " ".join(
+        m.group(0) for m in re.finditer(r'\b(?:fill|stroke)="[^"]*"', root)
+    )
+    if defaults:
+        inner = f"<g {defaults}>{inner}</g>"
     return x, y, w, h, inner
 
 def namespace_ids(inner, prefix):
@@ -84,10 +102,14 @@ def build(theme):
     W = n * SIZE + (n - 1) * GAP
     H = SIZE
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="tech stack icons">']
-    for i, (label, src, fname, mono_light, mono_dark) in enumerate(ICONS):
+    for i, icon in enumerate(ICONS):
+        label, src, fname, mono_light, mono_dark = icon[:5]
+        fix = icon[5] if len(icon) > 5 else None
         mono = mono_light if theme == "light" else mono_dark
         x, y, w, h, inner = parse(fetch(SOURCES[src].format(fname)))
         inner = namespace_ids(inner, f"i{i}_")
+        if fix:
+            inner = fix(inner)
         if mono:
             inner = recolor_mono(inner, mono)
         s = min(SIZE / w, SIZE / h)
