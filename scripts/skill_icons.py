@@ -37,6 +37,7 @@ ICONS = [
     # 换回与其他图标一致的米白底 + 黑齿轮（复合图标禁止整体重染，故逐段替换颜色）
     ("Rust",       "skillicons", "Rust", None, None,
      lambda s: s.replace('fill="#E43717"', 'fill="#F4F2ED"').replace('fill="#fff"', 'fill="#000"')),
+    ("OpenAI",     "lobeicons", "openai", None, "#D4D4D4"),  # 官方即单色黑，深色主题重染浅灰
     ("Claude",     "lobeicons", "claude-color", None, None),
     ("Codex",      "lobeicons", "codex-color", None, None),
     ("VS Code",    "skillicons", "VSCode-Light", None, None),
@@ -73,7 +74,8 @@ def parse(svg):
     # 导致无显式 fill 的路径退回 SVG 默认的黑色实心（Markdown 徽章、Ubuntu 圆环踩过坑）。
     # 用 <g> 继承还原：显式写在子元素上的属性仍优先生效。
     defaults = " ".join(
-        m.group(0) for m in re.finditer(r'\b(?:fill|stroke)="[^"]*"', root)
+        m.group(0)
+        for m in re.finditer(r'\b(?:fill|stroke|fill-rule|clip-rule)="[^"]*"', root)
     )
     if defaults:
         inner = f"<g {defaults}>{inner}</g>"
