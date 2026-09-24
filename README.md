@@ -65,8 +65,9 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/dark/openai.png">
   <img alt="OpenAI" height="40" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/light/openai.png">
 </picture>
-<img alt="Claude" height="50" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.95.0/icons/claude-color.svg">
-<img alt="Codex" height="50" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.95.0/icons/codex-color.svg">
+<!-- lobe 的 SVG 自带 width/height="1em"，GitHub 渲染时压成 16px 并忽略 height 属性，须用 PNG 版 -->
+<img alt="Claude" height="50" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/light/claude-color.png">
+<img alt="Codex" height="50" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/light/codex-color.png">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/inkscape/D4D4D4">
   <img alt="Inkscape" height="40" src="https://cdn.simpleicons.org/inkscape/4B5B6B">
