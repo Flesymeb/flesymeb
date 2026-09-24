@@ -59,11 +59,8 @@
 
 <p align="center">
 <br/>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,cpp,typescript,rust,vscode,windows,ubuntu,markdown,latex&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,cpp,typescript,rust,vscode,windows,ubuntu,markdown,latex&theme=light">
-  <img alt="tech stack" height="40" src="https://skillicons.dev/icons?i=python,cpp,typescript,rust,vscode,windows,ubuntu,markdown,latex&theme=light">
-</picture>
+<!-- 贴片固定用浅色（米白底）版：skillicons 的 dark 贴片(#242938)与 GitHub 深色背景(#0d1117)几乎同色，会显得图标缺漏 -->
+<img alt="tech stack" height="40" src="https://skillicons.dev/icons?i=python,cpp,typescript,rust,vscode,windows,ubuntu,markdown,latex&theme=light">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/dark/openai.png">
   <img alt="OpenAI" height="40" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/light/openai.png">
