@@ -61,13 +61,11 @@
 <br/>
 <!-- 贴片固定用浅色（米白底）版：skillicons 的 dark 贴片(#242938)与 GitHub 深色背景(#0d1117)几乎同色，会显得图标缺漏 -->
 <img alt="tech stack" height="40" src="https://skillicons.dev/icons?i=python,cpp,typescript,rust,vscode,windows,ubuntu,markdown,latex&theme=light">
-<!-- lobe 的 SVG 自带 width/height="1em"，GitHub 渲染时压成 16px 并忽略 height 属性，须用 PNG 版 -->
-<img alt="Claude" height="50" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/light/claude-color.png">
-<img alt="Codex" height="50" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/light/codex-color.png">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/inkscape/D4D4D4">
-  <img alt="Inkscape" height="40" src="https://cdn.simpleicons.org/inkscape/4B5B6B">
-</picture>
+<!-- Claude/Codex/Inkscape 无 CDN 贴片版（Codex 仅存在于 lobehub），logo 取自 lobehub/lobe-icons 与 simple-icons，
+     套 skillicons 同款米白圆角贴片后存为本仓库静态文件，与上面的贴片条保持一个系列 -->
+<img alt="Claude" height="40" src="https://raw.githubusercontent.com/Flesymeb/flesymeb/main/profile/tile-claude.svg">
+<img alt="Codex" height="40" src="https://raw.githubusercontent.com/Flesymeb/flesymeb/main/profile/tile-codex.svg">
+<img alt="Inkscape" height="40" src="https://raw.githubusercontent.com/Flesymeb/flesymeb/main/profile/tile-inkscape.svg">
 <br/>
 </p>
 
