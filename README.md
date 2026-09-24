@@ -61,10 +61,6 @@
 <br/>
 <!-- 贴片固定用浅色（米白底）版：skillicons 的 dark 贴片(#242938)与 GitHub 深色背景(#0d1117)几乎同色，会显得图标缺漏 -->
 <img alt="tech stack" height="40" src="https://skillicons.dev/icons?i=python,cpp,typescript,rust,vscode,windows,ubuntu,markdown,latex&theme=light">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/dark/openai.png">
-  <img alt="OpenAI" height="40" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/light/openai.png">
-</picture>
 <!-- lobe 的 SVG 自带 width/height="1em"，GitHub 渲染时压成 16px 并忽略 height 属性，须用 PNG 版 -->
 <img alt="Claude" height="50" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/light/claude-color.png">
 <img alt="Codex" height="50" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-png@1.95.0/light/codex-color.png">
