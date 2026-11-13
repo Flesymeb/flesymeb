@@ -158,7 +158,7 @@
             data-testid="lang-progress"
             x="278.841"
             y="0"
-            width="42.722"
+            width="42.803999999999995"
             height="8"
             fill="#858585"
           />
@@ -166,7 +166,7 @@
           <rect
             mask="url(#rect-mask)"
             data-testid="lang-progress"
-            x="321.563"
+            x="321.645"
             y="0"
             width="37.187000000000005"
             height="8"
@@ -176,7 +176,7 @@
           <rect
             mask="url(#rect-mask)"
             data-testid="lang-progress"
-            x="358.75"
+            x="358.832"
             y="0"
             width="28.576999999999998"
             height="8"
@@ -186,9 +186,9 @@
           <rect
             mask="url(#rect-mask)"
             data-testid="lang-progress"
-            x="387.327"
+            x="387.409"
             y="0"
-            width="23.698"
+            width="23.656999999999996"
             height="8"
             fill="#3D6117"
           />
@@ -197,21 +197,21 @@
     <g transform="translate(25, 25)">
       <circle cx="5" cy="6" r="5" fill="#3572A5" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Python - 905 hrs 38 mins
+        Python - 906 hrs 15 mins
       </text>
     </g>
   
     <g transform="translate(202.5, 25)">
       <circle cx="5" cy="6" r="5" fill="#083fa1" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Markdown - 502 hrs 40 mins
+        Markdown - 503 hrs 10 mins
       </text>
     </g>
   
     <g transform="translate(25, 50)">
       <circle cx="5" cy="6" r="5" fill="#858585" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Other - 215 hrs 59 mins
+        Other - 216 hrs 14 mins
       </text>
     </g>
   
@@ -232,7 +232,7 @@
     <g transform="translate(202.5, 75)">
       <circle cx="5" cy="6" r="5" fill="#3D6117" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        TeX - 119 hrs 35 mins
+        TeX - 119 hrs 36 mins
       </text>
     </g>
   
